@@ -1,0 +1,16 @@
+<input type="number" id="input">
+<input onclick="work()" type="submit" value="RUN">
+<p id="ans"></p>
+
+
+<script>
+    function work() {
+        price = document.getElementById("input").value;
+        if (price > 500)
+            ans = "free Cake";
+        else
+            ans = "Cake 30TK";
+        
+        document.getElementById("ans").innerHTML = ans;
+    }
+</script>
